@@ -5,8 +5,7 @@
 }
 
 body {
-  background-image: url(../assets/images/Background_Intro.png);
-  background-size: cover;
+  background-color: var(--base-gray2);
 }
 
 :root {

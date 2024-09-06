@@ -1,0 +1,61 @@
+.projects-page {
+  img {
+    max-width: 306px;
+    border-radius: 6px;
+  }
+}
+
+.my-work {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+
+  h3 {
+    color: var(--principal-red);
+    font: var(--subtitle);
+  }
+}
+
+.highlights {
+  display: flex;
+  justify-content: center;
+
+  h2 {
+    color: var(--base-gray6);
+    font: var(--title-md);
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 24px;
+  padding: 56px;
+}
+
+.card {
+  height: 280px;
+  width: 330px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  background-color: var(--base-gray3);
+
+  &:hover {
+    border-color: var(--base-gray6);
+  }
+
+  h3 {
+    margin-top: 24px;
+    font: var(--title-sm);
+    color: var(--base-gray6);
+  }
+
+  p {
+    margin-top: 8px;
+    font: var(--text-sm);
+    color: var(--base-gray5);
+  }
+}

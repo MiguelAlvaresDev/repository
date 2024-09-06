@@ -1,8 +1,14 @@
+.hero {
+  background-image: url(../assets/images/Background_Intro.png);
+  background-size: cover;
+}
+
 .profile {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 400px;
+  padding: 56px;
 }
 
 .container-avatar {
@@ -17,7 +23,7 @@
   }
 }
 
-.container-icon {
+.container-vector {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -28,10 +34,9 @@
   }
 }
 
-.container {
+.container-subtitle {
   display: flex;
   justify-content: center;
-  padding: 56px;
 
   font: 20px/120% var(--font-family-subtitle);
   color: var(--base-gray5);
@@ -41,10 +46,66 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+}
 
-  .container-title {
-    .title {
+.container-title {
+  margin-top: 8px;
+  margin-bottom: 20px;
+
+  .title {
+    display: flex;
+    justify-content: center;
+
+    font: bold 56px/120% var(--font-family-title);
+    color: var(--base-gray5);
+  }
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+
+  h3 {
+    color: var(--base-gray4);
+    font: 14px/140% var(--font-family-text);
+  }
+}
+
+.container-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 16px;
+
+  font: 14px/140% var(--font-family-text);
+  a {
+    text-decoration: none;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 25px;
+    background-color: var(--base-gray3);
+
+    span {
       color: var(--base-gray5);
+      padding: 8px;
     }
+  }
+}
+
+.container-arrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+
+  .arrow-down {
+    display: block;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 200px;
   }
 }
