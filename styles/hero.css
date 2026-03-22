@@ -19,7 +19,9 @@
     height: 125px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px var(--base-gray2), 0 0 0 6px var(--principal-red);
+    box-shadow:
+      0 0 0 4px var(--base-gray2),
+      0 0 0 6px var(--principal-red);
   }
 }
 
@@ -37,14 +39,27 @@
 .container-subtitle {
   display: flex;
   justify-content: center;
+  text-align: center;
 
   font: 20px/120% var(--font-family-subtitle);
   color: var(--base-gray5);
 
-  #name {
+  .name {
     color: var(--principal-red);
     margin-left: 10px;
     margin-right: 10px;
+  }
+}
+
+#subtitle-text::after {
+  content: "|";
+  color: var(--principal-red);
+  animation: cursor 0.7s step-end infinite;
+}
+
+@keyframes cursor {
+  50% {
+    opacity: 0;
   }
 }
 
@@ -92,6 +107,7 @@
 
     span {
       color: var(--base-gray5);
+      font-weight: bold;
       padding: 8px;
     }
   }
