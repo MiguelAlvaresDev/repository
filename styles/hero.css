@@ -13,15 +13,38 @@
 
 .container-avatar {
   position: relative;
+  width: 125px;
+  height: 125px;
+  margin: 0 auto; /* centraliza */
 
   .avatar {
     width: 125px;
     height: 125px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow:
-      0 0 0 4px var(--base-gray2),
-      0 0 0 6px var(--principal-red);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--principal-red);
+    border-right-color: var(--principal-red);
+    animation: girar 4s linear infinite;
+  }
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -117,6 +140,7 @@
   display: flex;
   justify-content: center;
   margin-top: 94px;
+  scroll-behavior: smooth;
 
   .arrow-down {
     display: block;

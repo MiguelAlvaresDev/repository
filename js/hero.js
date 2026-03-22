@@ -31,4 +31,9 @@ function digitar() {
   }
 }
 
+document.querySelector(".arrow-down").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
+});
+
 digitar();
