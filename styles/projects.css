@@ -59,3 +59,27 @@
     color: var(--base-gray5);
   }
 }
+
+@media (max-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(2, auto);
+    padding: 40px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+    padding: 32px 16px;
+    gap: 16px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects-page img {
+    max-width: 100%;
+  }
+}
